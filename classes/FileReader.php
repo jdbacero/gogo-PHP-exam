@@ -38,6 +38,12 @@ class FileReader
 
     public static function saveCSV($array)
     {
+        $ctr = 0;
+        $filename = "csvoutput.csv";
+        while (file_exists($filename)) {
+            $filename = "csvoutput{$ctr}.csv";
+            $ctr++;
+        }
         $fp = fopen('output.csv', 'wb');
 
         foreach ($array as $fields) {
