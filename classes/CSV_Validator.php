@@ -55,7 +55,8 @@ class CSV_Validator
 
     public function validateGender($gender)
     {
-        if ($gender == "male" || $gender = "female" || empty($gender)) {
+        $mygender = $gender; //Somehow $gender gets overwritten so make another var
+        if ($mygender == "male" || $mygender = "female" || empty($mygender)) {
             return $gender;
         }
         return "Error format";
@@ -70,13 +71,4 @@ class CSV_Validator
         }
         return "Error format";
     }
-
-    // public function mandatory($value)
-    // {
-    //     if (empty($value)) {
-    //         return "Error required";
-    //     } else {
-    //         return $value;
-    //     }
-    // }
 }
