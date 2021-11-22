@@ -44,7 +44,7 @@ class FileReader
             $filename = "csvoutput{$ctr}.csv";
             $ctr++;
         }
-        $fp = fopen('output.csv', 'wb');
+        $fp = fopen($filename, 'wb');
 
         foreach ($array as $fields) {
             fputcsv($fp, $fields);
