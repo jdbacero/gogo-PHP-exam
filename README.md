@@ -1,7 +1,7 @@
 # gogo-PHP-exam
 
 This CLI app was done for an exam from a company I applied for.
-Two hours was given.
+I was given 120 minutes to complete the task.
 
 The app does as the following guidelines indicate.
 1. Create the CSV format data file (writers.csv) format displayed below.
