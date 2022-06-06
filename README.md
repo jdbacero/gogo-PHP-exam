@@ -1,4 +1,4 @@
-# gogo-exam
+# gogo-PHP-exam
 
 This CLI app was done for an exam from a company I applied for.
 Two hours was given.
